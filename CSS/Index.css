@@ -69,7 +69,7 @@ body{
   font-size:18px;
 }
 
-/* Button */
+
 .button{
   display:inline-block;
   padding:12px 25px;
@@ -79,6 +79,7 @@ body{
   border-radius:5px;
   font-weight:bold;
   transition:0.3s;
+  animation:buttonanimation 5s linear infinite;
 }
 
 .button:hover{
@@ -86,7 +87,7 @@ body{
   transform:scale(1.05);
 }
 
-/* Image */
+
 .hero-image img{
   width:300px;
   border-radius:50%;
@@ -94,14 +95,25 @@ body{
   animation:float 3s ease-in-out infinite;
 }
 
-/* Animation */
-@keyframes float{
-  0%{transform:translateY(0);}
-  50%{transform:translateY(-15px);}
-  100%{transform:translateY(0);}
+
+@keyframes buttonanimation{
+    0%{
+        background: linear-gradient(45deg, #00ff87, #60efff);
+    }
+    25%{
+        background: linear-gradient(45deg, #60efff, #0061ff);
+    }
+    50%{
+        background: linear-gradient(45deg, #0061ff, #ff00cc);
+    }
+    75%{
+        background: linear-gradient(45deg, #ff00cc, #00ff87);
+    }
+    100%{
+        background: linear-gradient(45deg, #00ff87, #60efff);
+    }
 }
 
-/* Responsive */
 @media(max-width:768px){
 
   .navbar{
