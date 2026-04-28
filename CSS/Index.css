@@ -1,0 +1,143 @@
+body{
+  background:linear-gradient(135deg,#0f172a,#1e3a8a);
+  color:white;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Times New Roman', Times, serif, sans-serif;
+}
+
+/* Navbar */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 8%;
+  height:70px;
+  background:#111827;
+}
+
+.logo{
+  color:#00f7ff;
+}
+
+.menu{
+  display:flex;
+  list-style:none;
+  gap:30px;
+}
+
+.menu a{
+  font-size:20px;
+  color:white;
+  text-decoration:none;
+  transition:all 0.3s ease;
+  padding:10px 15px;
+  border-radius:5px;
+  font-weight:500;
+}
+
+.menu a:hover{
+  color:#00ff66;
+}
+
+/* Hero Section */
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  min-height:90vh;
+  padding:60px 8%;
+  flex-wrap:wrap;
+}
+
+.hero-text{
+  max-width:500px;
+  margin-top:40px;
+}
+
+.hero-text h1{
+  font-size:50px;
+}
+
+.hero-text span{
+  color:#00f7ff;
+}
+
+.hero-text p{
+  margin:20px 0;
+  font-size:18px;
+}
+
+/* Button */
+.button{
+  display:inline-block;
+  padding:12px 25px;
+  background:#00f7ff;
+  color:black;
+  text-decoration:none;
+  border-radius:5px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.button:hover{
+  background:white;
+  transform:scale(1.05);
+}
+
+/* Image */
+.hero-image img{
+  width:300px;
+  border-radius:50%;
+  margin-top:-30px;
+  animation:float 3s ease-in-out infinite;
+}
+
+/* Animation */
+@keyframes float{
+  0%{transform:translateY(0);}
+  50%{transform:translateY(-15px);}
+  100%{transform:translateY(0);}
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+  .navbar{
+    flex-direction:column;
+    gap:10px;
+    height:auto;
+    padding:15px;
+  }
+
+  .menu{
+    flex-direction:column;
+    text-align:center;
+    gap:15px;
+  }
+
+  .hero{
+    flex-direction:column-reverse;
+    text-align:center;
+    padding-top:40px;
+  }
+
+  .hero-text h1{
+    font-size:38px;
+  }
+
+  .hero-image img{
+    width:220px;
+    margin-bottom:20px;
+  }
+}
+.footer{
+  text-align:center;
+  padding:20px;
+  background:#111827;
+  color:white;
+  margin-top:40px;
+  font-size:14px;
+  border-top:1px solid #1e3a8a;
+}
